@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane fx:id="mainPain" prefHeight="331.0" prefWidth="650.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+            <Menu mnemonicParsing="false" text="Choose">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#generate" text="Generate" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#newGoal" text="Add Goal" />
+                  <MenuItem mnemonicParsing="false" onAction="#editGoal" text="Edit Goal" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Delete">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#deleteGoal" text="Erase Goal" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
